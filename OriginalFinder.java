@@ -6,12 +6,12 @@ public class OriginalFinder {
         List<Integer> result = new ArrayList<>();
 
 
-        for (int number : integer) {
+        for (Integer number : integer) {
             frequency.put(number, frequency.getOrDefault(number, 0) + 1);
         }
 
 
-        for (int numebr : integer) {
+        for (Integer numebr : integer) {
             if (frequency.get(numebr) > 1 && !result.contains(numebr)) {
                 result.add(numebr);
             }
